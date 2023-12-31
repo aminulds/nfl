@@ -306,7 +306,14 @@ a.btn.live-btn {
 }
 
 .modal_header_info {
-	background-color: #d9edf7;
+	background-color: #000000cf;
+    border: none;
+    padding: 16px;
+	padding-bottom: 0;
+}
+.modal-header .close{
+	padding: 16px;
+    color: white;
 }
 
 .list-group {
@@ -577,7 +584,7 @@ body.modal-open {
 	color: #00b67a;
 }
 
-.player .trust_text {
+.trust_text {
 	font-size: 10px;
 }
 
@@ -671,7 +678,7 @@ body.modal-open {
 @media (min-width: 576px) {
 
 	.modal_video .modal-dialog {
-		max-width: 90%;
+		max-width: 60%;
 	}
 }
 
