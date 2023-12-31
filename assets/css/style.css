@@ -310,10 +310,14 @@ a.btn.live-btn {
     border: none;
     padding: 16px;
 	padding-bottom: 0;
+	position: relative;
 }
 .modal-header .close{
-	padding: 16px;
+	position: absolute;
     color: white;
+    font-size: 14px;
+    right: 24px;
+    top: 18px;
 }
 
 .list-group {
@@ -601,7 +605,7 @@ body.modal-open {
 }
 
 .player__popup-devices img {
-	width: 18px;
+	width: 12px;
 }
 
 .modal_video .modal-body {
@@ -610,7 +614,7 @@ body.modal-open {
 
 .link_button {
 	background-color: #ff0000;
-    padding: 8px 16px;
+    padding: 8px 12px;
     color: #ffffff;
     font-size: 8px;
     font-weight: 700;
