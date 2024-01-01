@@ -555,7 +555,8 @@ body.modal-open {
 }
 
 .player__popup-logo {
-	width: 70px;
+	width: 60px;
+	margin-right: 4px;
 }
 
 .player__popup-trust {
@@ -614,9 +615,9 @@ body.modal-open {
 
 .link_button {
 	background-color: #ff0000;
-    padding: 8px 12px;
+    padding: 6px 12px;
     color: #ffffff;
-    font-size: 8px;
+    font-size: 6px;
     font-weight: 700;
     border-radius: 2px;
     -webkit-transition: 0.3s;
@@ -630,6 +631,32 @@ body.modal-open {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
+
+.extra_link {
+	margin-top: 8px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-line-pack: center;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+  }
+  .extra_link a {
+	font-size: 6px;
+	font-weight: 700;
+	color: #ff0000;
+	text-decoration: underline;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+  }
+  .extra_link a:hover {
+	color: #031026;
+  }
+  .extra_link a:not(:last-child) {
+	padding-right: 8px;
+	border-right: 2px solid #ddd;
+  }
 
 @media (min-width: 768px) {
 	.player__popup-logo {
@@ -677,6 +704,13 @@ body.modal-open {
 		font-size: 14px;
 		line-height: 26px;
 	}
+
+	.link_button{
+		font-size: 10px;
+	}
+	.extra_link a{
+		font-size: 10px;
+	}
 }
 
 @media (min-width: 576px) {
@@ -695,10 +729,6 @@ body.modal-open {
 		width: 75%;
 		display: block;
 		margin: 0 auto;
-	}
-	.link_button{
-		margin-bottom: 8px;
-		display: inline-block;
 	}
 }
 
