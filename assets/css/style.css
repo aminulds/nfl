@@ -600,6 +600,7 @@ body.modal-open {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	justify-content: center;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	gap: 8px;
@@ -651,11 +652,15 @@ body.modal-open {
 	transition: 0.3s;
   }
   .extra_link a:hover {
-	color: #031026;
+	color: #ffffff;
   }
   .extra_link a:not(:last-child) {
 	padding-right: 8px;
 	border-right: 2px solid #ddd;
+  }
+
+  .popup_video{
+	aspect-ratio: 2;
   }
 
 @media (min-width: 768px) {
@@ -706,10 +711,10 @@ body.modal-open {
 	}
 
 	.link_button{
-		font-size: 10px;
+		font-size: 12px;
 	}
 	.extra_link a{
-		font-size: 10px;
+		font-size: 12px;
 	}
 }
 
