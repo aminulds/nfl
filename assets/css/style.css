@@ -616,25 +616,29 @@ body.modal-open {
 
 .link_button {
 	background-color: #ff0000;
-    padding: 6px 12px;
+    padding: 6px 16px;
     color: #ffffff;
     font-size: 6px;
     font-weight: 700;
     border-radius: 2px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+	display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+	gap: 16px;
 }
 
 .link_button:hover {
-	display: inline-flex;
 	background-color: #fb623f;
 	color: #ffffff;
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+}
+.link_button:hover i{
+	right: 8px;
 }
 
 .extra_link {
-	margin-top: 8px;
+	margin-top: 12px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -644,7 +648,7 @@ body.modal-open {
 	gap: 8px;
   }
   .extra_link a {
-	font-size: 6px;
+	font-size: 12px;
 	font-weight: 700;
 	color: #ff0000;
 	text-decoration: underline;
@@ -712,9 +716,10 @@ body.modal-open {
 
 	.link_button{
 		font-size: 12px;
+		padding: 6px 24px;
 	}
 	.extra_link a{
-		font-size: 12px;
+		font-size: 16px;
 	}
 }
 
@@ -755,3 +760,67 @@ body.modal-open {
 		margin-left: 16px;
 	}
 }
+
+
+/* animation */
+.flipping {
+	width: 14px;
+	height: 14px;
+	display: flex;
+	/* animation: flipping-k0nqxqmd 4s infinite linear 0.5s; */
+ }
+ 
+ .flipping::before,
+ .flipping::after {
+	content: "";
+	flex: 1;
+	background: #ffffff;
+	clip-path: polygon(0 100%,0 0,100% 50%);
+	animation: flipping-dif1rumd 1s infinite linear;
+	
+ }
+ 
+ .flipping::before {
+	/* transform: scale(-1); */
+	animation: none;
+ }
+ 
+ @keyframes flipping-k0nqxqmd {
+	0%, 12.49% {
+	   transform: rotate(0deg);
+	}
+ 
+	12.5%, 37.49% {
+	   transform: rotate(90deg);
+	}
+ 
+	/* 37.5%, 62.49% {
+	   transform: rotate(180deg);
+	} */
+ 
+	/* 62.5%, 87.49% {
+	   transform: rotate(270deg);
+	}
+ 
+	87.5%, 100% {
+	   transform: rotate(360deg);
+	} */
+ }
+ 
+ @keyframes flipping-dif1rumd {
+	0%, 5% {
+	   transform: translate(0px) perspective(168px) rotateY(0deg);
+	}
+ 
+	33% {
+	   transform: translate(-11.2px) perspective(168px) rotateX(0deg);
+	}
+ 
+	/* 66% {
+	   transform: translate(-11.2px) perspective(168px) rotateX(-180deg);
+	}
+ 
+	95%, 100% {
+	   transform: translate(0px) perspective(168px) rotateX(-180deg);
+	} */
+ }

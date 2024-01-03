@@ -79,10 +79,17 @@
 				</div>
 			</div>
 
+
+			<div class="extra_link">
+				<a href="#" target="_blank">HD</a>
+				<a href="#" target="_blank">FHD</a>
+				<a href="#" target="_blank">4K ULTRA HD</a>
+			</div>
+
 			<!-- modal -->
 			<div class="modal modal_video fade position-absolute pr-0" id="video_modal" data-backdrop="static"
 				tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
 					<div class="modal-content">
 						<div class="modal-body p-2 p-lg-3">
 							<div class="row">
@@ -148,14 +155,11 @@
 									</div>
 
 									<div class="mt-2 mt-lg-3 text-center">
-										<a class="link_button" href="#" target="_blank"><span
-												class="d-none d-md-inline">FED UP WITH IRRITATING ADS?</span> SWITCH TO
-											PREMIUM!</a>
-										<div class="extra_link">
-											<a href="#" target="_blank">HD</a>
-											<a href="#" target="_blank">FHD</a>
-											<a href="#" target="_blank">4K ULTRA HD</a>
-										</div>
+										<a class="link_button" href="#" target="_blank">
+											<span class="d-none d-md-inline">FED UP WITH IRRITATING ADS?</span> 
+											SWITCH TO PREMIUM!
+											<div class="flipping"></div>
+										</a>
 									</div>
 								</div>
 
@@ -409,7 +413,8 @@
 				setTimeout(function () {
 					$('.popup_banner').fadeToggle(500);
 					$('.popup_banner').toggleClass('d-none');
-				}, 40000);
+					$('.popup_video').attr('src', '');
+				}, 20000); // after 20 sec popup video replace with image
 			}, 2000);
 		});
 
